@@ -90,9 +90,10 @@ height: 778.4px;
     align-content:center ;
 }
 #tribute-info {
-    min-height: 680px;
+    min-height: 300px;
     max-height: fit-content;
-    max-width: 680px;
+    max-width: 650px;
+    width: 650px;
     color: white;
     background-color:#473F3D;
     display: flex;
@@ -100,7 +101,7 @@ height: 778.4px;
     position: relative;
     top: 150px;
     right: 130px;
-    padding: 10px;
+    padding: 50px;
     border-radius:5px ;
     border:2px solid #836b66;
     font-family: Brandon-text;
@@ -109,6 +110,12 @@ height: 778.4px;
 }
 #tribute-info > p {
     font-size: 1.4em;
+}
+#tribute-info > img {
+    align-self:end;
+    display: block;
+    height: auto;
+    width: 100px;
 }
 .dline {
     width: 200px;
@@ -216,17 +223,6 @@ figure {
         left: 30px;
      }
 }
-@media (max-width: 1300px) {
-    #nav {
-        flex-direction: row;
-        width:5%;
-        gap: 10px;
-        margin: auto 0;
-        position: relative;
-        top: -28%;
-        left: 30px;
-     }
-}
 @media (max-width: 850px) {
     #tribute-info {
         max-width: 96%;
@@ -257,6 +253,10 @@ figure {
     #img-container {
     max-width: 100%;
     min-width: 100%;
+    grid-template-areas:
+    "1 2"
+    "3 4"
+    "5 6";
         top: auto;
         left: auto;
         right: auto;
