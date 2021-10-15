@@ -125,6 +125,7 @@ height: 778.4px;
     margin-top: 87px;
 }
 #img-container {
+    border:2px solid #836b66;
     min-height: 780px;
     max-height: fit-content;
     max-width: 1020px;
